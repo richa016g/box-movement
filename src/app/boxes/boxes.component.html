@@ -1,0 +1,10 @@
+<div>
+  <button (click)="generateABox($event)">Generate Box</button>
+  <br/>
+  <div [ngStyle]="{'height':borderHeight+'px','width':borderWidth+'px','top':bounds.top +'px', 'left':bounds.left+'px'}" style="border:2px solid red;position:fixed;" >
+      
+    <app-box style="position:absolute;" *ngFor="let box of boxes" [boxData]="box">
+
+    </app-box>
+  </div>
+</div>

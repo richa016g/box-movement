@@ -1,0 +1,6 @@
+<div  (click)="selectBox($event)" >
+  <div style="position:fixed; font-size: 30px; color:white;" [ngStyle]="{'height':boxData.height+'px', 'width': boxData.width+'px',
+   'background-color': boxData.color,
+   'top': boxData.yValue+'px',
+   'left': boxData.xValue+'px', 'border':'2px solid transparent', 'border-color':borderColor}">{{boxData.uid}}</div>
+</div>
